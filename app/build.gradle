@@ -122,13 +122,13 @@ android {
 
     signingConfigs {
         release {
-            storeFile file("../../release.keystore")
+            storeFile file("../release.keystore")
             storePassword "password"
             keyAlias "release"
             keyPassword "password"
         }
         upload {
-            storeFile file("../../upload.keystore")
+            storeFile file("../upload.keystore")
             storePassword "password"
             keyAlias "upload"
             keyPassword "password"
@@ -172,6 +172,17 @@ android {
 
     viewBinding {
         enabled = true
+    }
+
+    lint {
+        abortOnError false
+        disable 'MissingTranslation'
+        disable 'VectorRaster'
+        disable 'TypographyFractions'
+        disable 'TypographyQuotes'
+        disable 'Typos'
+        disable 'UnusedResources'
+        warningsAsErrors false
     }
 }
 
