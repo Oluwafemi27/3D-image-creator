@@ -1,0 +1,28 @@
+# Android/Mobile App Files (not needed for web deployment)
+app/
+build.gradle
+gradle/
+gradle.properties
+gradlew
+gradlew.bat
+settings.gradle
+plugins.gradle
+*.keystore
+AppIcon
+HeaderImage*
+NotificationIcon
+generate-*.sh
+generate-*.js
+
+# Git and development files
+.git/
+.github/
+.gitignore
+CHANGELOG.md
+REVISION
+
+# Keep only web deployment files:
+# - index.html
+# - vercel.json  
+# - package.json
+# - README.md

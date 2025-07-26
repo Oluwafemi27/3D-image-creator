@@ -1,0 +1,23 @@
+{
+  "name": "workspace3-web",
+  "version": "1.0.0",
+  "description": "Web version of Workspace3 - Meshy AI",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx serve .",
+    "build": "echo 'Static site - no build needed'",
+    "start": "npx serve ."
+  },
+  "keywords": [
+    "meshy",
+    "ai",
+    "3d",
+    "workspace",
+    "web-app"
+  ],
+  "author": "Workspace3",
+  "license": "MIT",
+  "devDependencies": {
+    "serve": "^14.2.0"
+  }
+}
